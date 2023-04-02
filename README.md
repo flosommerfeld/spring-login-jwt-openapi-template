@@ -1,4 +1,4 @@
-# Spring Boot Login example with Spring Security, h2, JWT and OpenAPI (springdoc)
+# Spring Boot Login example with Spring Security, H2, JWT and OpenAPI (springdoc)
 > This repository provides a simple template for a Spring REST API that includes user authentication using JWT, a pre-configured local database, and an OpenAPI documentation. The template is based on the [repository from user bezkoder](https://github.com/bezkoder/spring-boot-login-example).  
 
 - Appropriate Flow for User Login and Registration with JWT
@@ -10,9 +10,21 @@
 
 ## OpenAPI/Swagger Documentation
 ![openapi-image](https://imgur.com/HlDa5Py.png)
-Can be visited via: http://localhost:8080/swagger-ui/index.html
 
-## User Registration, Login and Authorization process.
+Can be visited via: http://localhost:8080/swagger-ui/index.html in your browser.
+
+## H2 Console
+![openapi-image](https://i.imgur.com/GPqoWcB.png)
+
+Can be visited via: http://localhost:8080/h2-console in your browser.
+- Saved Settings: Generic H2 (Embedded)
+- Setting Name: Generic H2 (Embedded)
+- Driver Class: org.h2.Driver
+- JDBC URL: jdbc:h2:mem:testdb
+- Username: sa
+- Password:
+
+## User Registration, Login and Authorization process
 
 ![spring-boot-login-example-flow](spring-boot-login-example-flow.png)
 
