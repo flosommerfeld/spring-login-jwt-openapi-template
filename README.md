@@ -1,10 +1,16 @@
-# Spring Boot Login example with Spring Security, MySQL and JWT
+# Spring Boot Login example with Spring Security, h2, JWT and OpenAPI (springdoc)
+> This repository provides a simple template for a Spring REST API that includes user authentication using JWT, a pre-configured local database, and an OpenAPI documentation. The template is based on the [repository from user bezkoder](https://github.com/bezkoder/spring-boot-login-example).  
 
 - Appropriate Flow for User Login and Registration with JWT
 - Spring Boot Rest Api Architecture with Spring Security
 - How to configure Spring Security to work with JWT
 - How to define Data Models and association for Authentication and Authorization
 - Way to use Spring Data JPA to interact with MySQL Database
+- Springdoc JWT configuration for the OpenAPI documentation
+
+## OpenAPI/Swagger Documentation
+![openapi-image](https://imgur.com/HlDa5Py.png)
+Can be visited via: http://localhost:8080/swagger-ui/index.html
 
 ## User Registration, Login and Authorization process.
 
@@ -21,6 +27,7 @@ For more detail, please visit:
 > [For H2 Embedded database](https://www.bezkoder.com/spring-boot-security-login-jwt/)
 
 > [For MongoDB](https://www.bezkoder.com/spring-boot-jwt-auth-mongodb/)
+
 
 ## Dependency
 – If you want to use PostgreSQL:
@@ -76,6 +83,7 @@ mvn spring-boot:run
 ```
 
 ## Run following SQL insert statements
+These will be automatically run if you are using h2. See the init script [data.sql](src/main/resources/data.sql)
 ```
 INSERT INTO roles(name) VALUES('ROLE_USER');
 INSERT INTO roles(name) VALUES('ROLE_MODERATOR');
